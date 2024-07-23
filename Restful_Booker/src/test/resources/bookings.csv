@@ -1,0 +1,11 @@
+firstname,lastname,totalprice,depositpaid,checkin,checkout,additionalneeds
+John,Doe,100,true,2023-08-01,2023-08-10,Breakfast
+Jane,Smith,200,false,2023-09-01,2023-09-15,Lunch
+Bob,Johnson,150,true,2023-10-05,2023-10-20,Dinner
+Alice,White,250,false,2023-11-10,2023-11-25,Breakfast
+Chris,Green,300,true,2023-12-15,2023-12-30,No
+Diana,Black,350,false,2024-01-01,2024-01-15,Lunch
+Edward,King,400,true,2024-02-20,2024-03-05,Dinner
+Fiona,Queen,450,false,2024-03-15,2024-03-30,Breakfast
+George,Knight,500,true,2024-04-01,2024-04-15,Lunch
+Hannah,Parker,550,false,2024-05-10,2024-05-25,Dinner

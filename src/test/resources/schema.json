@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "properties": {
+    "offenders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "firstName": {
+            "type": "string"
+          },
+          "lastName": {
+            "type": "string"
+          },
+          "dob": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "zipcode": {
+            "type": "string"
+          },
+          "sex": {
+            "type": "string"
+          },
+          "age": {
+            "type": "string"
+          },
+          "eyeColor": {
+            "type": "string"
+          },
+          "hairColor": {
+            "type": "string"
+          },
+          "height": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "string"
+          },
+          "race": {
+            "type": "string"
+          },
+          "marks": {
+            "type": "string"
+          },
+          "riskLevel": {
+            "type": "string"
+          },
+          "crime": {
+            "type": "string"
+          },
+          "registrationDate": {
+            "type": "null"
+          },
+          "content": {
+            "type": "string"
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lng": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
