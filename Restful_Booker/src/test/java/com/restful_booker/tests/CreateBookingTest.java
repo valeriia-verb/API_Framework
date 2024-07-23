@@ -234,7 +234,7 @@ The response should include an error message "Method Not Allowed".
 
         int invalidId = 999999; // Assuming this ID does not exist
 
-        given().accept(ContentType.JSON)
+        given()
                 .header("Authorization", "Basic YWRtaW46cGFzc3dvcmQxMjM=")
                 .contentType(ContentType.JSON)
                 .body(updatedRequestBody)

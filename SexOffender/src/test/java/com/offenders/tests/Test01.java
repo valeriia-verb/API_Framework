@@ -30,7 +30,7 @@ Given a name with special characters or numbers, when I search, then I should re
     public void test01(){
         Response response = given()//.log().all()
                 .accept(ContentType.JSON)
-                .header("x-rapidapi-key", key)
+                .header("x-rapidapi-key", key) //8a758c2715msh95fa080821b5073p1f3689jsn9fc4f3235248
                 .queryParam("firstName", "Joseph")
                 .queryParam("lastName", "Nigro")
                 .when().get("/sexoffender").prettyPeek();
