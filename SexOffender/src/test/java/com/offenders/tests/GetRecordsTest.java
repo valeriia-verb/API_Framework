@@ -7,9 +7,10 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Test01 extends TestBase {
+public class GetRecordsTest extends TestBase {
     // read environment variable "key" to avoid hardcoding it in the code
     String key = System.getenv("key");
 
@@ -21,11 +22,7 @@ so that I can obtain detailed information about them.
 
     Acceptance Criteria:
 
-Given a valid name, when I search for it, then I should receive a list of offenders matching the name.
-Given an invalid or non-existent name, when I search for it, then I should receive an empty result set or an appropriate error message.
-Given an empty name parameter, when I search, then I should receive an error indicating that the name parameter is required.
-Given a name with special characters or numbers, when I search, then I should receive an appropriate error message or a sanitized search result.
-     */
+Given a valid name, when I search for it, then I should receive a list of offenders matching the name.    */
     @Test
     public void test01(){
         Response response = given()//.log().all()
@@ -43,6 +40,16 @@ Given a name with special characters or numbers, when I search, then I should re
                 () -> assertEquals("Nigro", response.jsonPath().getString("offenders[0].lastName"))
         );
     }
+
+     /*
+    User Story 02: Search by City
+As a user,
+I want to search for sex offenders by the city,
+so that I can obtain detailed information about them.
+
+    Acceptance Criteria:
+
+Given a valid city name, when I search for it, then I should receive a list of offenders matching.    */
 
     @Test
     public void test02(){
